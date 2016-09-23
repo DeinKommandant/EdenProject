@@ -1,0 +1,118 @@
+body{
+    overflow: hidden;
+}
+
+#main_top {
+background: #182948;
+transition: background 1s;
+height: 155px; 
+    
+}
+
+#main_mid {
+    
+height:670px;    
+ width:100%;       
+    padding:0;
+    margin:0;
+    
+    
+}
+
+
+
+
+
+#main_bot {
+background: #182948;
+transition: background 1s;
+height: 155px;    
+}
+
+.navbar-nav, .nav {
+    margin: auto;
+    text-align: center;
+    float:none;
+    
+}
+
+
+.but {
+cursor: pointer;
+padding: 0;
+
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.slide{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+        
+}
+
+#mid_box{
+    
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    
+}
+
+
+#main0 {
+    background-color: #182948;
+    background-image: url(../0_1920.jpg);
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    
+}
+
+#main1{
+    background-color:#181649;
+    background-image: url(../1_1920.jpg);
+    height:100%;
+   
+}
+#main2 {
+    background-color:#0c0d10;
+    background-image: url(../2_1920.jpg);
+    height:100%;
+  
+}
+
+#main3 {
+    background-color:#614350;
+    background-image: url(../3_1920.jpg);
+    height:100%;
+    
+}
+
+/* ### Here's the ADAPTIVE begins ### */
+
+/* MAX 1280x1024 */
+@media only screen and (max-height: 1280px) and (max-width: 1024px) {
+    #main0 {
+        background-image: url(../css/0_1280.jpg);
+    }
+
+    #main1{
+        background-image: url(../css/1_1280.jpg);
+    }
+    #main2 {
+        background-image: url(../css/2_1280.jpg);
+    }
+
+    #main3 {
+        background-image: url(../css/3_1280.jpg);
+    }
+    
+}
