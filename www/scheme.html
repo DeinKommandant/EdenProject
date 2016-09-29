@@ -22,19 +22,99 @@
     <link href="css/eden.css" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid" style="height:100%;">
-    <div class="row" style="height:20%;">
-        <div class="col-lg-12" style="height:100%; background-color: #182948;"></div>
-    </div>
-    <div class="row" style="height:60%;">
-        <div class="col-lg-12" style="height:100%; padding:0;">
-        <div id="main0"></div>
+<div class="container-fluid" id="main_frame">
+    <div class="row" id="top_row">
+        <div class="col-lg-12" id="top_frame">
+            <row><p class="center">EDEN TSC</p></row>
+            <row>
+                <ul class="col-lg-4 col-lg-push-4 nav navbar-nav">
+                    <li class="col-xs-3 col-sm-3 but item1 active"><a href="#">About</a></li>
+                    <li class="col-xs-3 col-sm-3 but item2"><a href="#">Service</a></li>
+                    <li class="col-xs-3 col-sm-3 but item3"><a href="#">Partners</a></li>
+                    <li class="col-xs-3 col-sm-3 but item4"><a href="#">Contacts</a></li>
+                </ul>
+            </row>
         </div>
     </div>
-    <div class="row" style="height:20%;">
-        <div class="col-lg-12" style="height:100%; background-color: #182948;"></div>
+    <div class="row" id="central_row">
+        <div class="col-lg-12" id="central_frame">
+            <!-- Carousel activator -->
+            <div id="myCarousel" class="carousel slide">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="height:100%;"> <!--id="mid_box" -->
+                    <!-- Slide #1 -->
+                    <div class="item active" id="main0" style="background-color: #182948">
+                        <div class="container-fluid">
+                        <h3>TEA</h3>
+                        </div>
+                    </div>
+                    <!-- Slide #2 -->
+                    <div class="item" id="main1" style="background-color: #614350">
+                        <div class="container-fluid">
+                        <h3>PINT</h3>
+                        </div>
+                    </div>
+                    <!-- Slide #3 -->
+                    <div class="item" id="main2" style="background-color: #0c0d10">
+                        <div class="container-fluid">
+                        <h3>PUB</h3>
+                        </div>
+                    </div>
+                    <!-- Slide #4 -->
+                    <div class="item" id="main3" style="background-color: #181649">
+                        <div class="container-fluid">
+                        <h3>CAKE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="bottom_row">
+        <div class="col-lg-12" id="bottom_frame"></div>
     </div>    
 </div>
+    <!-- Carousel Engine -->
+    <script>   
+        $(document).ready(function(){
+            // Activate Carousel
+            $("#myCarousel").carousel({interval: false});
+            var maincolor;
+            // Enable Carousel Indicators
+            $(".item1").click(function(){
+                $("#myCarousel").carousel(0);
+                document.getElementById("top_frame").style.backgroundColor=document.getElementById("main0").style.backgroundColor;
+                document.getElementById('bottom_frame').style.backgroundColor=document.getElementById("main0").style.backgroundColor;;
+                
+            });
+            $(".item2").click(function(){
+                $("#myCarousel").carousel(1);
+                document.getElementById("top_frame").style.backgroundColor=document.getElementById("main1").style.backgroundColor;
+                document.getElementById('bottom_frame').style.backgroundColor=document.getElementById("main1").style.backgroundColor;;
+                
+                
+            });
+            $(".item3").click(function(){
+                $("#myCarousel").carousel(2);
+                document.getElementById("top_frame").style.backgroundColor=document.getElementById("main2").style.backgroundColor
+                document.getElementById('bottom_frame').style.backgroundColor=document.getElementById("main2").style.backgroundColor;
+            });
+            $(".item4").click(function(){
+                $("#myCarousel").carousel(3);
+                document.getElementById("top_frame").style.backgroundColor=document.getElementById("main3").style.backgroundColor;
+                document.getElementById('bottom_frame').style.backgroundColor=document.getElementById("main3").style.backgroundColor;;
+            });
+            
+            // Enable Carousel Controls
+            $(".left").click(function(){
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function(){
+                $("#myCarousel").carousel("next");
+            });
+        });
+    </script>    
+
 </body>
 
 </html>
