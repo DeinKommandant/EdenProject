@@ -1,118 +1,101 @@
-body{
+html, body{
     overflow: hidden;
-}
+    height:100%;
+    width:100%; }
 
-#main_top {
-background: #182948;
-transition: background 1s;
-height: 155px; 
-    
-}
+#main_frame {
+    height:100%; }
 
-#main_mid {
-    
-height:670px;    
- width:100%;       
-    padding:0;
-    margin:0;
-    
-    
-}
+/* Rows */
+#top_row {
+    height:20%; }
 
+#central_row {
+    height:60%; }
 
+#bottom_row{
+    height:20%; }
 
+/* Frames */
+#top_frame {
+    height:100%;
+    min-height:100px;
+    background: #182948;
+    transition: background 1s;  }
 
+#central_frame {
+    height:100%; 
+    padding:0;  }
 
-#main_bot {
-background: #182948;
-transition: background 1s;
-height: 155px;    
-}
+#bottom_frame {
+    height:100%;
+    background: #182948;
+    transition: background 1s; }
 
 .navbar-nav, .nav {
     margin: auto;
     text-align: center;
-    float:none;
-    
-}
-
+    /*float:none;*/ }
 
 .but {
-cursor: pointer;
-padding: 0;
-
-}
+    cursor: pointer;
+    padding: 0;
+    min-width:60px;    }
 
 .center {
     margin: auto;
-    text-align: center;
-}
+    text-align: center; }
 
 .slide{
     height:100%;
-    width:100%;
     padding:0;
-    margin:0;
-        
-}
-
-#mid_box{
-    
-    height:100%;
-    width:100%;
-    padding:0;
-    margin:0;
-    
-}
-
+    margin:0;   }
 
 #main0 {
-    background-color: #182948;
-    background-image: url(../0_1920.jpg);
+    background-color:#182948;
+    background: url(../css/0_1920.jpg) no-repeat center fixed; 
+    /*background-size: cover;*/
     height:100%;
     width:100%;
     padding:0;
-    margin:0;
-    
-}
+    margin:0;   }
 
-#main1{
+#main3{
     background-color:#181649;
-    background-image: url(../1_1920.jpg);
+    background: url(../css/1_1920.jpg) no-repeat center fixed;
     height:100%;
-   
-}
+    width:100%;
+    padding:0;
+    margin:0;   }
+
 #main2 {
     background-color:#0c0d10;
-    background-image: url(../2_1920.jpg);
+    background: url(../css/2_1920.jpg) no-repeat center fixed;
     height:100%;
-  
-}
+    width:100%;
+    padding:0;
+    margin:0;   }
 
-#main3 {
+#main1 {
     background-color:#614350;
-    background-image: url(../3_1920.jpg);
+    background: url(../css/3_1920.jpg) no-repeat center fixed;
     height:100%;
-    
-}
+    width:100%;
+    padding:0;
+    margin:0;   }
 
 /* ### Here's the ADAPTIVE begins ### */
 
 /* MAX 1280x1024 */
 @media only screen and (max-height: 1280px) and (max-width: 1024px) {
     #main0 {
-        background-image: url(../css/0_1280.jpg);
-    }
+        background-image: url(../css/0_1280.jpg);   }
 
-    #main1{
-        background-image: url(../css/1_1280.jpg);
-    }
+    #main1 {
+        background-image: url(../css/1_1280.jpg);   }
     #main2 {
-        background-image: url(../css/2_1280.jpg);
-    }
+        background-image: url(../css/2_1280.jpg);   }
 
     #main3 {
-        background-image: url(../css/3_1280.jpg);
+        background-image: url(../css/3_1280.jpg);   }
     }
-    
-}
